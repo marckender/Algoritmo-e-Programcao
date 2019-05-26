@@ -1,3 +1,4 @@
+
 for i in range (10):
 	n=int(input("digite um numero: "))
 	suc=n+1
