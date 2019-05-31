@@ -14,17 +14,18 @@ def exo1():
         print()
 
 
-
 #####################################EXO2#################
+
+
 
 def min(X,Y):
     if X>Y:
         return X
     elif Y>X:
         return Y
-#chamada da funçao2
+#chamada da ,
 def exo2():
-
+#
 #CODIGO PRINCIPAL
     X=int(input("Digite o numero 1: "))
     Y=int(input("Digite o numero 2: "))
@@ -39,10 +40,9 @@ def fat(N):
         f=f*(N-i)
     return f
 
-#chamada da EXO3
-################
+#
 def exo3():
-
+#
     N=int(input("fatoriel de: "))
     print("eh: ",fat(N))
 
@@ -64,9 +64,9 @@ def gemeos(aux,i):
     if i-aux==2:
         return True
 
-#chamada da exo3
+#
 def exo4():
-###############
+#
 
     aux=1
     for i in range(1,1000):
@@ -77,56 +77,83 @@ def exo4():
 
         i+=1
 
+
+#################Exo5######################
+
+def somalista(lista1,lista2):
+	r=len(lista1)
+	s=0
+	b=0
+	vetor=[]
+	for i in range (r):
+		vetor.append(0)
+
+	for i in range(r-1,-1,-1):
+		s=lista1[i]+lista2[i]+b
+		if s>9 and i !=0:
+			a=str(s)
+			b=int(a[0])
+			vetor[i]=int(a[1])
+		else:
+			vetor[i]=s
+
+	return vetor
+
+def exo5():
+    n1=[4,2,4,1]
+    n2=[3,7,7,2]
+
+    v=somalista(n1,n2)
+    print(v)
+    somalista(n1,n2)
+
+
 ##############Exo6############################
-def exo6():
-    n=(int(input("DIGITE O NUMERO: ")))
+def perfeito(n):
+
     conta=1
     soma=0
     while conta<n:
 
         if n%conta==0:
             soma+=conta
-            conta+=1
-        else:
-            conta+=1
+        conta+=1
+
     if soma==n:
-        print("perfeito: ")
         return 1
     else:
-        #print("nao e perfeito: ")
         return 0
-
-
-   
-
+#
+def exo6():
+#
+    print(perfeito(int(input("DIGITE O NUMERO: "))))
 
 
 #################EXO7####################################
+def mid(conta,soma):
 
-def exo7():
-
-    x=int(input("Digite o limite: "))
-    conta=0
-    soma=0
-    for i in range (x):
-        notas=float(input("Digite a nota: "))
-
-        conta+=1
-        soma+=notas
     media=soma/conta
-    print(media)
     return media
 
+conta=0
+soma=0
+while True:
+    notas=float(input("Digite a nota: "))
+    if notas <0:
+        break
+
+    conta+=1
+    soma+=notas
+def exo7():
+    print("media: {:.2f}".format(mid(conta,soma)))
 
 
+#Fiz a chamada das funçoes aqui,so tirar o comantario pra rodar o execicio desejada.
 
-
-#exo1()
+exo1()
 #exo2()
+#exo3()
 #exo4()
-#5
-exo6()
+#exo5()
+#exo6()
 #exo7()
-
-
-#

@@ -1,6 +1,5 @@
 def primo(N):
 
-
     i=2
     primo=True
     for i in range (2, N):

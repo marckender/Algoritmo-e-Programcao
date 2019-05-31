@@ -18,10 +18,8 @@ def somalista(lista1,lista2):
 	return vetor
 
 
-
-
-n1=[8,5]
-n2=[2,5]
+n1=[4,2,4,1]
+n2=[3,7,7,2]
 
 v=somalista(n1,n2)
 print(v)
