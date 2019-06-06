@@ -150,10 +150,10 @@ def exo7():
 
 #Fiz a chamada das funçoes aqui,so tirar o comantario pra rodar o execicio desejada.
 
-exo1()
+#exo1()
 #exo2()
 #exo3()
 #exo4()
 #exo5()
 #exo6()
-#exo7()
+exo7()
