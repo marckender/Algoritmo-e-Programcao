@@ -1,7 +1,6 @@
-def teste():
-	print("*"*20)
+while True:
+	n=int(input("huhg: "))
+	n=int(input("huhg: "))
+	if n==0:
+		break
 
-teste()
-print("Anita Lopes")
-teste()
-print("Guto Gracia")
