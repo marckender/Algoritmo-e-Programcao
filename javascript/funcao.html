@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1 JAvascript</title>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+ 
+        function calcularea(largura,comprimento){
+
+            largura=parseFloat(largura);
+            comprimento=parseFloat(comprimento);
+
+            var area=largura* comprimento;
+
+            document.write("o terreno possui " + area +" Metros quadrado");
+            //return area;
+        }
+
+        var largura=prompt("Digite a largura do terreno: ");
+        var comprimento = prompt("Digite o comprimento do terreno: ")
+
+        //document.write("o terreno possui " + calcularea(largura,comprimento) +" Metros quadrado");
+        calcularea(largura,comprimento);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
