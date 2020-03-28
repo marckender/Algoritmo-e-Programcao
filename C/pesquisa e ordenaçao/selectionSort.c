@@ -19,15 +19,13 @@ void selectionSort(int vetor[],int n){
 
     }
 }
-
 int main(void){
     int vetor[]={29,0,14,14,25,8,37};
     int n=7;
-
-    // for (int i=0;i<n;i++){
-    //     printf("%d ",vetor[i]);
-    // }
-    // printf("\n\n");
+    for (int i=0;i<n;i++){
+        printf("%d ",vetor[i]);
+    }
+    printf("\n\n");
 
     selectionSort(vetor, n);
     for (int i=0;i<n;i++){
